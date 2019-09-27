@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 2-1</title>
+    
+    <style>
+        body {
+            background-color: #715b64
+        }
+        
+        p {
+            color: white
+        }
+        
+        section {
+            background-color: #89937c
+        }
+        
+        ul {
+            background-color: #d3bdb0
+        }
+        
+        ol {
+            background-color: #d3bdb0
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lists in HTML</h1>
+        <p>__________________________________________________________________</p>
+    </header>
+
+    <section>
+        <h2>Unordered Lists</h2>
+        These lists are used for items that do not have a particular order.
+
+        <div>
+            Types of Unordered Lists:
+        </div>
+
+        <ul>
+            <li>Disc</li>
+            <li style="list-style-type: circle">Circle</li>
+            <li style="list-style-type: square">Square</li>
+            <li style="list-style-type: none">None</li>
+        </ul>
+        <p>__________________________________________________________________________________________________________________________</p>
+    </section>
+
+    <section>
+        <h2>Ordered Lists</h2>
+        These lists are used to emphasize the order of items.
+
+        <div>
+            Types of ordered lists: <br>
+        </div>
+
+        <ol start="0">
+            <li style="list-style-type: none">123</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol style="list-style-type: upper-latin" start="0">
+            <li style="list-style-type: none">ABC</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol style="list-style-type: lower-latin" start="0">
+            <li style="list-style-type: none">abc</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol style="list-style-type: upper-roman" start="0">
+            <li style="list-style-type: none">Roman Numerals</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <ol style="list-style-type: lower-roman" start="0">
+            <li style="list-style-type: none">Lowercase Roman</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        
+        <p>__________________________________________________________________________________________________________________________</p>
+    </section>
+
+    <section>
+        <h2>Nested Lists</h2>
+        We can place list inside another list to create a sublist.
+        
+        <ol style="list-style-type: upper-roman">
+            <li>First Period: 8:20-9:48</li>
+            <li>Second Period: 9:55-11:27</li>
+            <li>Block Lunch:</li>
+            
+            <ol style="list-style-type: lower-latin">
+                <li>A block: 11:27-11:57</li>
+                <li>B block: 11:57-12:27</li>
+            </ol>
+            
+            <li>Third Period: 12:32-2:00</li>
+            <li>Fourth Period: 2:07-3:35</li>
+        </ol>
+        
+        <p>__________________________________________________________________________________________________________________________</p>
+    </section>
+
+    <section>
+        <h2>Image List Icons</h2>
+        Using images as the icons for lists.
+        
+        <ul style="list-style-image: url(../Images/checkmark.png)">
+            <li>Check 1</li>
+            <li>Check 2</li>
+            <li>Check 3</li>
+        </ul>
+    </section>
+</body>
+
+</html>
