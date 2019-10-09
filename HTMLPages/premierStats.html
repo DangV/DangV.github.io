@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Premier League Table</title>
+    <link rel="stylesheet" type="text/css" href="premierStyle.css">
+    
+    <style>
+        span {
+            color: rgba(0,0,0,0.54);
+            font-size: 12px;
+        }
+        
+        section {
+            background-color: #ffffff;
+        }
+        
+        section tr:first-child {
+            color: rgba(0,0,0,0.54);
+            font-size: 12px;
+        }
+        
+        section td:not(:last-child) {
+            text-align: left;
+        }
+        
+        section td:first-child {
+            padding-left: 15px;
+            width: 15px;
+        }
+        
+        section td:nth-child(2) {
+            width: 60px;
+        }
+        
+        section td:nth-child(3) {
+            width: 0px;
+        }
+        
+        section td:nth-child(2) img {
+            border-radius: 100%;
+            width: 42px;
+            margin-top: 7px;
+        }
+        
+        section td:nth-child(3) img {
+            width: 16px;
+        }
+        
+        section td:last-child {
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Premier League</h1>
+
+        <table>
+            <tr>
+                <td>MATCHES</td>
+                <td>NEWS</td>
+                <td><a href="premierTable.html">STANDINGS</a></td>
+                <td>STATS</td>
+                <td>PLAYERS</td>
+            </tr>
+        </table>
+    </nav>
+
+    <section>
+        <header class="statsheader">
+            Goals
+        </header>
+
+        <table style="border-color: rgba(0,0,0,0.1)" border=1 frame=void rules=rows>
+            <tr>
+                <td colspan=3 style="text-align: left">Player</td>
+                <td style="text-align: right">Goals</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../Images/Sergio.jpg"></td>
+                <td>Sergio Aguero <br> <img src="../Images/ManCity.png">  <span>Man. City</span></td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../Images/Tammy.jpg"></td>
+                <td>Tammy Abraham <br> <img src="../Images/Chelsea.png">  <span>Chelsea</span></td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="../Images/Pierre.jpg"></td>
+                <td>Pierre-Emerick Aubameyang <br> <img src="../Images/Arsenal.png">  <span>Arsenal</span></td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="../Images/Raheem.jpg"></td>
+                <td>Raheem Sterling <br> <img src="../Images/ManCity.png">  <span>Man. City</span></td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="../Images/Teemu.jpg"></td>
+                <td>Teemu Pukki <br> <img src="../Images/Norwich.png">  <span>Norwich City</span></td>
+                <td>6</td>
+            </tr>
+        </table>
+    </section>
+</body>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    font-family: arial;
+}
+
+body {
+    background-color: #f1f3f4;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: #3f1052;
+    color: white;
+}
+
+table {
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+}
+
+nav h1 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav td {
+    height: 50px;
+    width: 20%;
+    text-align: center;
+}
+
+nav td:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav td a {
+    text-decoration: none;
+}
+
+nav td a:visited {
+    color: white;
+}
+
+section {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #f1f3f4;
+}
+
+header {
+    background-color: #f1f3f4;
+    padding: 16px;
+    margin-top: 5px;
+}
+
+header.statsheader {
+    background-color: #ffffff;
+}
+
+section table {
+    background-color: #ffffff;
+}
+
+section tr {
+    height: 41px;
+    line-height: 24px;
+}
+
+section tr:hover:not(:first-child) {
+    background-color: rgba(0,0,0,0.03);
+}
+
+section td {
+    min-width: 30px;
+    text-align: center;
+}

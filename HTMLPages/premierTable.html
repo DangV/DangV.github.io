@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Premier League Table</title>
+    <link rel="stylesheet" type="text/css" href="premierStyle.css">
+
+    <style> 
+        td:not(:last-child) img {
+            width: 24px;
+        }
+        
+        section tr:first-child {
+            color: rgba(0,0,0,0.54);
+            font-size: 12px;
+        }
+        
+        tr:not(:first-child) td:nth-child(3) {
+            width: 100%;
+            text-align: left;
+            padding: left;
+        }
+        
+        td:last-child {
+            width: 120px;
+            min-width: 120px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Premier League</h1>
+
+        <table>
+            <tr>
+                <td>MATCHES</td>
+                <td>NEWS</td>
+                <td>STANDINGS</td>
+                <td><a href="premierStats.html">STATS</a></td>
+                <td>PLAYERS</td>
+            </tr>
+        </table>
+    </nav>
+
+    <section>
+        <header>
+            <span style="color: rgba(0,0,0,0.54)">Season</span><br>
+            <span style="color: #4285f4">2019-2020</span>
+        </header>
+
+        <table style="border-color: rgba(0,0,0,0.1)" border=1 frame=void rules=rows>
+            <tr>
+                <td colspan="3" style="text-align: left">&nbsp;&nbsp;Club</td>
+                <td>MP</td>
+                <td>W</td>
+                <td>D</td>
+                <td>L</td>
+                <td>GF</td>
+                <td>GA</td>
+                <td>GD</td>
+                <td>Pts</td>
+                <td>Last 5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../Images/Liverpool.png"></td>
+                <td>Liverpool</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>0</td>
+                <td>18</td>
+                <td>5</td>
+                <td>13</td>
+                <td>21</td>
+                <td><img src="../Images/win.png"> <img src="../Images/win.png"> <img src="../Images/win.png"> <img src="../Images/win.png"> <img src="../Images/win.png"> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="../Images/ManCity.png"></td>
+                <td>Man. City</td>
+                <td>7</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>27</td>
+                <td>20</td>
+                <td>7</td>
+                <td>16</td>
+                <td><img src="../Images/win.png"> <img src="../Images/win.png"> <img src="../Images/loss.png"> <img src="../Images/win.png"> <img src="../Images/win.png"> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="../Images/LeicesterCity.png"></td>
+                <td>Leicester City</td>
+                <td>7</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>13</td>
+                <td>5</td>
+                <td>8</td>
+                <td>14</td>
+                <td><img src="../Images/win.png"> <img src="../Images/win.png"> <img src="../Images/loss.png"> <img src="../Images/win.png"> <img src="../Images/win.png"> </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="../Images/Arsenal.png"></td>
+                <td>Arsenal</td>
+                <td>7</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>12</td>
+                <td>11</td>
+                <td>1</td>
+                <td>12</td>
+                <td><img src="../Images/tie.png"> <img src="../Images/win.png"> <img src="../Images/tie.png"> <img src="../Images/tie.png"> <img src="../Images/loss.png"> </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
