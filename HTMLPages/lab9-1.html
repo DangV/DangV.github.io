@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 9-1</title>
+    
+    <style>
+        body {
+            background-image: url(../Images/9-1/sun.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .gif-container {
+            width: 33.333333333%;
+            float: left;
+            padding-top: 200px;
+            margin-bottom: 12%;
+        }
+        
+        .gif {
+            width: 100%;
+        }
+        
+        .gif:hover {
+            -ms-transform: rotate(360deg) scale(1.5);
+            -moz-transform: rotate(360deg) scale(1.5);
+            -webkit-transform: rotate(360deg) scale(1.5);
+            -o-transform: rotate(360deg) scale(1.5);
+            
+            -ms-transition: all 1s ease-in;
+            -moz-transition: all 1s ease-in;
+            -webkit-transition: all 1s ease-in;
+            -o-transition: all 1s ease-in;
+        }
+        
+        footer {
+            padding-left: 15%;
+            padding-right: 15%;
+            width: 98%
+            float: left;
+            border: 10px double white;
+            border-spacing: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-text {
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="wrapper">
+        <div class="gif-container">
+            <img class="gif" src="../Images/9-1/glasses.gif">
+        </div>
+        
+        <div class="gif-container">
+            <img class="gif" src="../Images/9-1/ness8.gif">
+        </div>
+        
+        <div class="gif-container">
+            <img class="gif" src="../Images/9-1/commodore.gif">
+        </div>
+        
+        <footer>
+            <div class="footer-text">[HOME]</div>
+            <div class="footer-text">[TEST]</div>  
+            <div class="footer-text">[NOT HOME]</div>
+        </footer>
+    </section>
+</body>
+
+</html>
