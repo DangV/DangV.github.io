@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 10-1</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-container {
+            background-color: 0;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .circles-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        
+        li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            bottom: -150px;
+            
+            animation-name: bubble;
+            animation-duration: 25s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes bubble {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+                border-radius: 0;
+            }
+            
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 100%;
+            }
+        }
+        
+        .circle1 {
+            left: 40%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 2s;
+        }
+        
+        .circle2 {
+            left: 87%;
+            width: 138px;
+            height: 138px;
+            animation-delay: 19.2s;
+        }
+        
+        .circle3 {
+            left: 31%;
+            width: 144px;
+            height: 144px;
+            animation-delay: 13.9s;
+        }
+        
+        .circle4 {
+            left: 26%;
+            width: 58px;
+            height: 58px;
+            animation-delay: 9.1s;
+        }
+        
+        .circle5 {
+            left: 78%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 19.3s;
+        }
+        
+        .circle6 {
+            left: 40%;
+            width: 96px;
+            height: 96px;
+            animation-delay: 0.1s;
+        }
+        
+        .circle7 {
+            left: 6%;
+            width: 52px;
+            height: 52px;
+            animation-delay: 3.3s;
+        }
+        
+        .circle8 {
+            left: 25%;
+            width: 105px;
+            height: 105px;
+            animation-delay: 4.7s;
+        }
+        
+        .circle9 {
+            left: 82%;
+            width: 104px;
+            height: 104px;
+            animation-delay: 13.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <ul class="circles-container">
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

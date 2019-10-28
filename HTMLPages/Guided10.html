@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 10-Guided</title>
+    
+    <style>
+        .div1 {
+            height: 40px;
+            width: 70%;
+            background: black;
+            margin: 50px auto;
+            border-radius: 5px;
+            position: relative;
+            
+            animation-fill-mode: forwards;
+            animation-name: change-colors;
+            animation-duration: 4s; 
+        }
+        
+        .ball {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            position: relative;
+            border-radius: 50%;
+            background: linear-gradient(35deg, #ccffff, #ffcccc);
+            
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+        }
+        
+        @keyframes change-colors {
+            0% {
+                background-color: blue;
+                top: 0px;
+            }
+            
+            50% {
+                background-color: green;
+                top: 50px;
+            }
+            
+            100% {
+                background-color: yellow;
+                top: 100px;
+            }
+        }
+        
+        @keyframes bounce {
+            0% {
+                top: 0px;
+            }
+            
+            50% {
+                top: 250px;
+                width: 130px;
+                height: 70px;
+            }
+            
+            100% {
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+    
+    </div>
+    
+    <div class="ball">
+    
+    </div>
+</body>
+
+</html>
