@@ -1,14 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Anton', sans-serif;
     color: white;
+}
+
+.hello-text {
+    height: 100vh;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    margin-left: 15px;
+    left: -700px;
+    
+    animation-name: move-text;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.name-text {
+    height: 100vh;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: white;
+    top: 80px;
+    position: relative;
+    margin-left: 15px;
+    left: -700px;
+    
+    animation-name: move-text;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(700px);
+    }
+}
+
+.link {
+    position: fixed;
+    left: calc(50% - 50px);
+    z-index: 10;
+    bottom: -8px;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    color: #54585b;
+}
+
+span {
+    vertical;
+}
+
+#gimp-link {
+    transform: translateX(90px);
+}
+
+#html-link {
+    transform: translateX(-90px);
+}
+
+.link img {
+    width: 60px;
+    transform: translateY(8px);
+}
+
+.content-wrapper {
+    margin: auto;
+    max-width: 900px;
+}
+
+.content-container {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.content-title {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 40px;
 }
 
 .content-card {
     width: 300px;
     text-align: left;
     background-color: #555555;
-    margin: auto;
+    margin: 5px;
     padding: 5px;
+    transition: all 1s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.content-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 1s ease;
 }
 
 .content-card img {
@@ -26,6 +124,6 @@ h1 {
     color: white;
 }
 
-a:visited {
+a {
     text-decoration: none;
 }
