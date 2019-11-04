@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 11-1</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        #tweet-container {
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+            border: solid darkgray 1px;
+        }
+
+        #tweet-profile {
+            display: flex;
+            padding: 10px;
+        }
+
+        #profile-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        #profile-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        #profile-info img {
+            width: 25px;
+        }
+        
+        #profile-hash {
+            color: darkgray;
+        }
+
+        #down-arrow {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        
+        #down-arrow img {
+            width: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="tweet-container">
+        <div id="tweet-profile">
+            <img id="profile-image" src="../Images/tweet-profile-pic.PNG">
+
+            <div id="profile-info">
+                <div id="profile-name">
+                    AUDL<img src="../Images/verified.png">
+                </div>
+
+                <div id="profile-hash">
+                    @theAUDL
+                </div>
+            </div>
+            
+            <div id="down-arrow">
+                <img src="../Images/down-arrow.svg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
